@@ -1,0 +1,19 @@
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
+  .contact-info__title {
+    font-size: 14px;
+    line-height: 27px;
+    color: #9fadc2; }
+  .contact-info__link {
+    color: black;
+    text-decoration: none;
+    line-height: 27px; }
+
+/*# sourceMappingURL=contact.css.map */

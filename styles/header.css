@@ -1,0 +1,86 @@
+.header {
+  position: relative;
+  height: 700px;
+  background-image: url(../images/panorama-2117310.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 12px; }
+  .header__title {
+    position: absolute;
+    top: 400px;
+    left: 175px;
+    width: 340px;
+    height: 121px;
+    font-size: 60px;
+    line-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: -1.5px;
+    font-weight: bold; }
+    .header__title::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -8px;
+      height: 2px;
+      width: 35px;
+      background-color: #fff; }
+    .header__title::after {
+      content: "";
+      position: absolute;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      top: -10px;
+      left: -7px;
+      height: 2px;
+      width: 35px;
+      background-color: #fff; }
+  .header__nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0; }
+  .header__top {
+    padding-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__phone {
+    padding-top: 32px;
+    width: 128px;
+    padding-left: 120px; }
+  .header__logo {
+    margin-left: 55px;
+    background-image: url(../images/logo.png);
+    background-size: cover; }
+  .header .logo {
+    width: 115px;
+    height: 76px; }
+  .header__action {
+    padding-top: 32px;
+    padding-right: 120px; }
+  .header__link {
+    color: #fff;
+    width: 113px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .header__link:hover {
+      color: #9fadc2; }
+
+/*# sourceMappingURL=header.css.map */

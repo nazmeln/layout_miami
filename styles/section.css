@@ -1,0 +1,36 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 170px 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  .section:first-child {
+    padding: 100px 120px; }
+  .section .info__heading {
+    width: 330px;
+    height: 100px;
+    font-style: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5px; }
+  .section .info__text {
+    height: 370px;
+    width: 500px;
+    margin-left: 50px; }
+    .section .info__text-blue {
+      color: #0075ff; }
+  .section__heading {
+    position: absolute;
+    top: -0.5em;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 0;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5px; }
+
+/*# sourceMappingURL=section.css.map */

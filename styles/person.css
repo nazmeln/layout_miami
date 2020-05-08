@@ -1,0 +1,32 @@
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px; }
+  .person__photo {
+    height: 153px;
+    width: 153px; }
+  .person__name {
+    color: #0075ff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0; }
+  .person__position {
+    color: #9fadc2;
+    margin: 0;
+    font-size: 14px;
+    line-height: 27px; }
+  .person__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 4px; }
+
+/*# sourceMappingURL=person.css.map */
