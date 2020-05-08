@@ -255,7 +255,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .section:first-child {
-    padding: 100px 120px; }
+    padding-top: 100px; }
   .section .info__heading {
     width: 330px;
     height: 100px;
