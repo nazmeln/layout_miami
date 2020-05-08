@@ -25,7 +25,7 @@ textarea {
   text-decoration: none;
   font-weight: bold; }
   .link:hover {
-    color: #9fadc2; }
+    color: #7d8ca1; }
 
 .header {
   position: relative;
@@ -110,7 +110,7 @@ textarea {
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
     .header__link:hover {
-      color: #9fadc2; }
+      color: #7d8ca1; }
 
 .nav {
   text-transform: uppercase; }
@@ -143,7 +143,7 @@ textarea {
       background: rgba(255, 255, 255, 0.1);
       padding: 5px 24px; }
   .nav__link:hover {
-    color: #9fadc2; }
+    color: #7d8ca1; }
 
 .heading {
   position: absolute;
@@ -246,14 +246,14 @@ textarea {
     width: 100%; }
 
 .section {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 170px 120px;
+  padding: 170px calc(50% - 470px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative; }
+          justify-content: space-between; }
   .section:first-child {
     padding: 100px 120px; }
   .section .info__heading {
@@ -304,7 +304,7 @@ textarea {
     color: #b9c1ce; }
   .input:focus {
     background-color: white;
-    border: 1px solid #9fadc2; }
+    border: 1px solid #7d8ca1; }
   .input_textarea {
     height: 144px;
     width: 413px;
@@ -368,7 +368,7 @@ textarea {
     line-height: 30px;
     margin-bottom: 0; }
   .person__position {
-    color: #9fadc2;
+    color: #7d8ca1;
     margin: 0;
     font-size: 14px;
     line-height: 27px; }
@@ -390,7 +390,7 @@ textarea {
   .contact-info__title {
     font-size: 14px;
     line-height: 27px;
-    color: #9fadc2; }
+    color: #7d8ca1; }
   .contact-info__link {
     color: black;
     text-decoration: none;
