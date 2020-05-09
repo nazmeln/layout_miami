@@ -5,10 +5,13 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 413px;
+  margin-top: 10px; }
   .form__item {
     margin-bottom: 16px; }
-  .form__input, .form__button {
-    width: 100%; }
+  @media screen and (max-width: 800px), (max-width: 450px) {
+    .form {
+      width: 100% !important; } }
 
 /*# sourceMappingURL=form.css.map */

@@ -1,16 +1,21 @@
 .header {
-  position: relative;
-  height: 700px;
-  background-image: url(../images/panorama-2117310.jpg);
+  height: 100vh;
+  width: 100%;
+  background: url(../images/panorama-2117310.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #fff;
   font-size: 12px; }
+  .header--wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1040px; }
   .header__title {
     position: absolute;
-    top: 400px;
-    left: 175px;
+    left: 200px;
+    bottom: 165px;
     width: 340px;
     height: 121px;
     font-size: 60px;
@@ -49,17 +54,18 @@
     left: 0;
     right: 0; }
   .header__top {
-    padding-top: 25px;
+    padding: 20px 100px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .header__phone {
-    padding-top: 32px;
-    width: 128px;
-    padding-left: 120px; }
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    max-width: 1440px; }
   .header__logo {
     margin-left: 55px;
     background-image: url(../images/logo.png);
@@ -67,9 +73,6 @@
   .header .logo {
     width: 115px;
     height: 76px; }
-  .header__action {
-    padding-top: 32px;
-    padding-right: 120px; }
   .header__link {
     color: #fff;
     width: 113px;
@@ -82,5 +85,40 @@
     transition: color 0.3s; }
     .header__link:hover {
       color: #7d8ca1; }
+
+@media screen and (max-width: 800px) {
+  .header {
+    position: relative; }
+    .header__link, .header__phone, .header__action {
+      display: none; }
+    .header__top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .header__logo {
+      margin: 0; }
+    .header__title {
+      position: absolute;
+      left: 10px;
+      right: 0;
+      width: 260px;
+      font-size: 46px; } }
+
+@media screen and (max-width: 450px) {
+  .header__link, .header__phone, .header__action {
+    display: none; }
+  .header .logo {
+    width: 73px;
+    height: 48px; }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 /*# sourceMappingURL=header.css.map */

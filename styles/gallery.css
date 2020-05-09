@@ -16,7 +16,9 @@
   transition: 0.3s;
   border-radius: 8px;
   border: 2px solid #0075ff;
-  outline: none; }
+  outline: none;
+  max-width: 280px;
+  width: 100%; }
   .gallery__button:hover {
     background-color: #0075ff;
     color: white;

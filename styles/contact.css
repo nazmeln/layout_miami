@@ -16,4 +16,11 @@
     text-decoration: none;
     line-height: 27px; }
 
+@media screen and (max-width: 800px), (max-width: 450px) {
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 /*# sourceMappingURL=contact.css.map */
