@@ -11,7 +11,7 @@
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    height: 260px;
+    max-height: 260px;
     border-radius: 8px; }
     .photos__img:hover, .photos__img:focus {
       -webkit-box-shadow: 0 0 22px rgba(0, 83, 181, 0.5);

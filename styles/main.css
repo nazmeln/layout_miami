@@ -56,7 +56,9 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     letter-spacing: -1.5px;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-animation: title 1s 1;
+            animation: title 1s 1; }
     .header__title::before {
       content: "";
       position: absolute;
@@ -94,11 +96,15 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    max-width: 1440px; }
+    max-width: 1440px;
+    -webkit-animation: appearence 1.2s ease-in 1;
+            animation: appearence 1.2s ease-in 1; }
   .header__logo {
     margin-left: 55px;
     background-image: url(../images/logo.png);
-    background-size: cover; }
+    background-size: cover;
+    -webkit-animation: flip 2s ease-in-out 1;
+            animation: flip 2s ease-in-out 1; }
   .header .logo {
     width: 115px;
     height: 76px; }
@@ -114,6 +120,50 @@ textarea {
     transition: color 0.3s; }
     .header__link:hover {
       color: #7d8ca1; }
+
+@-webkit-keyframes flip {
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); } }
+
+@keyframes flip {
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); } }
+
+@-webkit-keyframes appearence {
+  from {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes appearence {
+  from {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes title {
+  from {
+    -webkit-transform: translateX(-200px) skew(50deg);
+            transform: translateX(-200px) skew(50deg);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes title {
+  from {
+    -webkit-transform: translateX(-200px) skew(50deg);
+            transform: translateX(-200px) skew(50deg);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @media screen and (min-width: 800px) {
   .mob__header {
@@ -168,7 +218,7 @@ textarea {
     transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; } }
-  @media screen and (max-width: 800px) and (max-width: 320px), screen and (max-width: 450px) and (max-width: 320px) {
+  @media screen and (max-width: 800px) and (min-width: 320px), screen and (max-width: 450px) and (min-width: 320px) {
     .mob__nav {
       width: 120%; } }
 
@@ -225,7 +275,24 @@ textarea {
     text-align: center;
     font-size: 12px;
     -webkit-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    -webkit-animation: navItemAppearence 1.5s ease-in;
+            animation: navItemAppearence 1.5s ease-in; }
+    .nav__item:nth-child(2) {
+      -webkit-animation-delay: 0.09s;
+              animation-delay: 0.09s; }
+    .nav__item:nth-child(3) {
+      -webkit-animation-delay: 0.12s;
+              animation-delay: 0.12s; }
+    .nav__item:nth-child(4) {
+      -webkit-animation-delay: 0.15s;
+              animation-delay: 0.15s; }
+    .nav__item:nth-child(5) {
+      -webkit-animation-delay: 0.18s;
+              animation-delay: 0.18s; }
+    .nav__item:nth-child(6) {
+      -webkit-animation-delay: 0.21s;
+              animation-delay: 0.21s; }
   .nav__link {
     color: #fff;
     text-decoration: none;
@@ -238,6 +305,24 @@ textarea {
       padding: 5px 24px; }
   .nav__link:hover {
     color: #7d8ca1; }
+
+@-webkit-keyframes navItemAppearence {
+  from {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes navItemAppearence {
+  from {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 @media screen and (max-width: 450px), (max-width: 800px) {
   .nav,
@@ -332,7 +417,7 @@ textarea {
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    height: 260px;
+    max-height: 260px;
     border-radius: 8px; }
     .photos__img:hover, .photos__img:focus {
       -webkit-box-shadow: 0 0 22px rgba(0, 83, 181, 0.5);
