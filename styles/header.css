@@ -86,6 +86,10 @@
     .header__link:hover {
       color: #7d8ca1; }
 
+@media screen and (max-width: 1440px) {
+  .mob__header {
+    display: none; } }
+
 @media screen and (max-width: 800px), (max-width: 450px) {
   .header {
     position: relative; }
@@ -128,7 +132,11 @@
     max-width: 430px;
     width: 125%;
     height: 100%;
-    background: #0075ff; }
+    background: #0075ff;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     .mob__nav__top {
       margin: 20px auto;
       height: 48px;

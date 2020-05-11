@@ -13,6 +13,9 @@
   .person__photo {
     height: 153px;
     width: 153px; }
+    .person__photo:hover {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2); }
   .person__name {
     color: #0075ff;
     font-size: 24px;

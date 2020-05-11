@@ -115,6 +115,10 @@ textarea {
     .header__link:hover {
       color: #7d8ca1; }
 
+@media screen and (max-width: 1440px) {
+  .mob__header {
+    display: none; } }
+
 @media screen and (max-width: 800px), (max-width: 450px) {
   .header {
     position: relative; }
@@ -157,7 +161,11 @@ textarea {
     max-width: 430px;
     width: 125%;
     height: 100%;
-    background: #0075ff; }
+    background: #0075ff;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     .mob__nav__top {
       margin: 20px auto;
       height: 48px;
@@ -286,10 +294,6 @@ textarea {
   .menu-icon-line.menu-icon-active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-
-@media screen and (min-width: 1024px) {
-  .menu-icon {
-    display: none; } }
 
 .heading {
   position: absolute;
@@ -575,6 +579,9 @@ textarea {
   .person__photo {
     height: 153px;
     width: 153px; }
+    .person__photo:hover {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2); }
   .person__name {
     color: #0075ff;
     font-size: 24px;
