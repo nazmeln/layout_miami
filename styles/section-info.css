@@ -39,7 +39,7 @@
     line-height: 48px;
     letter-spacing: -1.5px; }
 
-@media screen and (max-width: 450px), (max-width: 800px) {
+@media screen and (max-width: 450px) {
   .section {
     padding: 70px 20px;
     -webkit-box-orient: vertical;
@@ -62,5 +62,15 @@
       width: fit-content; }
     .info__heading {
       font-size: 36px !important; } }
+
+@media screen and (max-width: 800px) {
+  .section:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /*# sourceMappingURL=section-info.css.map */

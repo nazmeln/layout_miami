@@ -10,7 +10,7 @@
   margin-top: 10px; }
   .form__item {
     margin-bottom: 16px; }
-  @media screen and (max-width: 800px), (max-width: 450px) {
+  @media screen and (max-width: 450px) {
     .form {
       width: 100% !important; } }
 

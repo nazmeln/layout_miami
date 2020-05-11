@@ -12,9 +12,7 @@
     margin-bottom: 16px;
     color: #0075ff; }
   .consultation__text {
-    max-height: 135px;
-    max-width: 410px;
-    margin-bottom: 200px; }
+    max-width: 410px; }
   .consultation__form {
     margin-top: 16px; }
 
@@ -23,6 +21,9 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /*# sourceMappingURL=consultation.css.map */

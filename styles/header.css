@@ -6,15 +6,15 @@
   background-position: center;
   background-attachment: fixed;
   color: #fff;
-  font-size: 12px; }
-  .header--wrapper {
+  font-size: 12px;
+  overflow: hidden; }
+  .header__wrapper {
     position: relative;
     margin: 0 auto;
     height: 100vh;
     max-width: 1040px; }
   .header__title {
     position: absolute;
-    left: 200px;
     bottom: 165px;
     width: 340px;
     height: 121px;
@@ -54,7 +54,7 @@
     left: 0;
     right: 0; }
   .header__top {
-    padding: 20px 100px 0;
+    padding: 20px 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,39 +86,81 @@
     .header__link:hover {
       color: #7d8ca1; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px), (max-width: 450px) {
   .header {
     position: relative; }
-    .header__link, .header__phone, .header__action {
+    .header__link, .header__phone, .header__action, .header__top, .header__logo {
       display: none; }
-    .header__top {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .header__logo {
-      margin: 0; }
     .header__title {
       position: absolute;
-      left: 10px;
-      right: 0;
-      width: 260px;
-      font-size: 46px; } }
-
-@media screen and (max-width: 450px) {
-  .header__link, .header__phone, .header__action {
-    display: none; }
-  .header .logo {
-    width: 73px;
-    height: 48px; }
-  .header__top {
+      left: 5%;
+      max-width: 260px;
+      font-size: 46px; }
+  .mob__header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24px 25px;
+    max-width: 700px; }
+  .mob__phone {
+    height: 24px;
+    width: 24px;
+    background: url(../images/Vector.png) center center/contain no-repeat; }
+  .mob__logo {
+    height: 48px;
+    width: 73px;
+    background: url(../images/logo-small.png) center center/contain no-repeat; }
+  .mob__slide {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  .mob__nav {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: -430px;
+    bottom: 0;
+    max-width: 430px;
+    width: 125%;
+    height: 100%;
+    background: #0075ff; }
+    .mob__nav__top {
+      margin: 20px auto;
+      height: 48px;
+      background: url(../images/logo-small.png) center center/contain no-repeat; }
+  .mob__list {
+    display: grid;
+    gap: 15px 0;
+    margin-left: 35px;
+    height: 70%;
+    width: 100%;
+    text-transform: uppercase;
+    list-style: none; }
+  .mob__item {
+    margin-left: 35px; }
+  .mob__link {
+    z-index: 15;
+    color: white;
+    font-size: 22px;
+    text-decoration: none; }
+  .mob__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 50px;
+    max-height: 50px;
+    height: 100%;
+    max-width: 200px;
+    width: 100%; } }
 
 /*# sourceMappingURL=header.css.map */
