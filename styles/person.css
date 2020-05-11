@@ -11,11 +11,16 @@
           align-items: center;
   width: 260px; }
   .person__photo {
+    border-radius: 50%;
     height: 153px;
-    width: 153px; }
+    width: 153px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
     .person__photo:hover {
-      -webkit-transform: scale(0.2);
-              transform: scale(0.2); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64);
+              box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64); }
   .person__name {
     color: #0075ff;
     font-size: 24px;
