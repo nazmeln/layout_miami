@@ -86,7 +86,7 @@
     .header__link:hover {
       color: #7d8ca1; }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1040px) {
   .mob__header {
     display: none; } }
 
