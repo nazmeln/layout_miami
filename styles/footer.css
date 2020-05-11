@@ -4,6 +4,7 @@
   width: 100%;
   background-image: url(../images/footer.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center; }
   .footer__logo {
     position: absolute;

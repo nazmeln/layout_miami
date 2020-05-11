@@ -86,7 +86,7 @@
     .header__link:hover {
       color: #7d8ca1; }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 800px) {
   .mob__header {
     display: none; } }
 
@@ -133,6 +133,8 @@
     width: 125%;
     height: 100%;
     background: #0075ff;
+    -webkit-filter: saturate(0.5);
+            filter: saturate(0.5);
     -webkit-transition: -webkit-transform 1s ease-in-out;
     transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
