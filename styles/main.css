@@ -110,8 +110,8 @@ textarea {
     text-decoration: none;
     color: #fff;
     border-bottom: 1px solid;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
     .header__link:hover {
       color: #7d8ca1; }
 
@@ -260,8 +260,8 @@ textarea {
     letter-spacing: 2px;
     text-align: center;
     font-size: 12px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     -webkit-animation: navItemAppearence 1.5s ease-in;
             animation: navItemAppearence 1.5s ease-in; }
     .nav__item:nth-child(2) {
@@ -282,8 +282,8 @@ textarea {
   .nav__link {
     color: #fff;
     text-decoration: none;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
     .nav__link_active {
       padding: 5px 24px;
       color: #fff;
@@ -433,8 +433,8 @@ textarea {
   font-weight: bold;
   line-height: 1;
   outline: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   background-color: #0075ff;
   color: white;
   cursor: pointer; }
@@ -576,7 +576,9 @@ textarea {
   color: black;
   background-color: #f6f8ff;
   text-align: left;
-  outline: none; }
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   .input::-webkit-input-placeholder {
     color: #b9c1ce; }
   .input::-moz-placeholder {
@@ -616,8 +618,8 @@ textarea {
   color: #0075ff;
   background-color: white;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   outline: none; }
   .gallery__button:hover {
     background-color: #0075ff;

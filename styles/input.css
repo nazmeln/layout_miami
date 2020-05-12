@@ -9,7 +9,9 @@
   color: black;
   background-color: #f6f8ff;
   text-align: left;
-  outline: none; }
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   .input::-webkit-input-placeholder {
     color: #b9c1ce; }
   .input::-moz-placeholder {
