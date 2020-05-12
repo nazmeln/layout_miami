@@ -22,19 +22,19 @@
       -webkit-box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64);
               box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64); }
   .person__name {
+    margin-bottom: 0;
     color: #0075ff;
     font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 0; }
+    line-height: 30px; }
   .person__position {
-    color: #7d8ca1;
     margin: 0;
+    color: #7d8ca1;
     font-size: 14px;
     line-height: 27px; }
   .person__text {
+    margin-top: 4px;
     text-align: center;
     font-size: 16px;
-    line-height: 27px;
-    margin-top: 4px; }
+    line-height: 27px; }
 
 /*# sourceMappingURL=person.css.map */

@@ -30,10 +30,7 @@ textarea {
 .header {
   height: 100vh;
   width: 100%;
-  background: url(../images/panorama-2117310.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url(../images/panorama-2117310.jpg) center center/cover no-repeat fixed;
   color: #fff;
   font-size: 12px;
   overflow: hidden; }
@@ -45,16 +42,16 @@ textarea {
   .header__title {
     position: absolute;
     bottom: 165px;
-    width: 340px;
-    height: 121px;
-    font-size: 60px;
-    line-height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 340px;
+    height: 121px;
+    font-size: 60px;
+    line-height: 60px;
     letter-spacing: -1.5px;
     font-weight: bold;
     -webkit-animation: title 1s 1;
@@ -70,22 +67,21 @@ textarea {
     .header__title::after {
       content: "";
       position: absolute;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-      -webkit-transform-origin: left;
-              transform-origin: left;
       top: -10px;
       left: -7px;
       height: 2px;
       width: 35px;
-      background-color: #fff; }
+      background-color: #fff;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transform-origin: left;
+              transform-origin: left; }
   .header__nav {
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0; }
   .header__top {
-    padding: 20px 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,24 +91,24 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px 30px 0;
     margin: 0 auto;
     max-width: 1440px;
     -webkit-animation: appearence 1.2s ease-in 1;
             animation: appearence 1.2s ease-in 1; }
   .header__logo {
     margin-left: 55px;
-    background-image: url(../images/logo.png);
-    background-size: cover; }
+    background: url(../images/logo.png) center center/cover no-repeat; }
   .header .logo {
     width: 115px;
     height: 76px; }
   .header__link {
-    color: #fff;
     width: 113px;
+    padding-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-bottom: 8px;
     text-decoration: none;
+    color: #fff;
     border-bottom: 1px solid;
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
@@ -193,7 +189,6 @@ textarea {
   .mob__nav {
     display: block;
     position: absolute;
-    z-index: 5;
     right: -430px;
     bottom: 0;
     max-width: 431px;
@@ -205,7 +200,8 @@ textarea {
     -webkit-transition: -webkit-transform 1s ease-in-out;
     transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; } }
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+    z-index: 5; } }
   @media screen and (max-width: 800px) and (min-width: 320px), screen and (max-width: 450px) and (min-width: 320px) {
     .mob__nav {
       width: 120%; } }
@@ -226,10 +222,10 @@ textarea {
   .mob__item {
     margin-left: 35px; }
   .mob__link {
-    z-index: 15;
     color: white;
     font-size: 22px;
-    text-decoration: none; }
+    text-decoration: none;
+    z-index: 15; }
   .mob__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -287,10 +283,10 @@ textarea {
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
     .nav__link_active {
+      padding: 5px 24px;
       color: #fff;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 5px 24px; }
+      background: rgba(255, 255, 255, 0.1); }
   .nav__link:hover {
     color: #7d8ca1; }
 
@@ -318,12 +314,18 @@ textarea {
     display: none; } }
 
 .menu-icon-line, .menu-icon-line::after, .menu-icon-line::before {
+  position: absolute;
+  display: block;
+  left: 0;
   width: 24px;
   height: 3px;
-  background-color: white;
-  left: 0;
-  position: absolute;
-  display: block; }
+  background-color: white; }
+
+.menu-icon-line::after, .menu-icon-line::before {
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+  transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
 
 .menu-icon-line.menu-icon-active::before, .menu-icon-line.menu-icon-active::after {
   top: 0;
@@ -354,18 +356,10 @@ textarea {
   position: relative; }
   .menu-icon-line::after {
     content: "";
-    top: 10px;
-    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
-    transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s;
-    transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
+    top: 10px; }
   .menu-icon-line::before {
     content: "";
-    top: -10px;
-    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s;
-    transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s;
-    transition: transform 0.2s ease-in 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
+    top: -10px; }
   .menu-icon-line.menu-icon-active {
     background-color: transparent; }
   .menu-icon-line.menu-icon-active::before {
@@ -386,10 +380,10 @@ textarea {
     position: absolute;
     left: 0;
     right: 0;
+    top: calc(100% + 4px);
     width: 20px;
     height: 13px;
     margin: auto;
-    top: calc(100% + 4px);
     background-image: url(../images/crown.svg); }
 
 .photos {
@@ -401,11 +395,11 @@ textarea {
           justify-content: space-between; }
   .photos__img {
     width: calc(50% - 10px);
+    max-height: 260px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    max-height: 260px;
     border-radius: 8px; }
     .photos__img:hover, .photos__img:focus {
       -webkit-box-shadow: 0 0 22px rgba(0, 83, 181, 0.5);
@@ -431,14 +425,14 @@ textarea {
 .button {
   display: block;
   padding: 22px 65px;
+  border-radius: 8px;
+  border: 2px solid #0075ff;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;
+  outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 8px;
-  border: 2px solid #0075ff;
-  outline: none;
   background-color: #0075ff;
   color: white;
   cursor: pointer; }
@@ -458,9 +452,9 @@ textarea {
           justify-content: space-between;
   width: 100%; }
   .consultation__heading {
+    margin-bottom: 16px;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 16px;
     color: #0075ff; }
   .consultation__text {
     max-width: 410px; }
@@ -571,14 +565,14 @@ textarea {
 .input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 14px;
-  color: black;
-  padding: 17px;
-  background-color: #f6f8ff;
-  text-align: left;
   height: 48px;
+  padding: 17px;
   margin-bottom: 16px;
   border-radius: 8px;
+  font-size: 14px;
+  color: black;
+  background-color: #f6f8ff;
+  text-align: left;
   outline: none; }
   .input::-webkit-input-placeholder {
     color: #b9c1ce; }
@@ -602,9 +596,13 @@ textarea {
   font-weight: bold; }
 
 .gallery__button {
-  margin: 44px auto 0;
   display: block;
+  margin: 44px auto 0;
   padding: 22px 65px;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #0075ff;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;
@@ -613,11 +611,7 @@ textarea {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 8px;
-  border: 2px solid #0075ff;
-  outline: none;
-  max-width: 280px;
-  width: 100%; }
+  outline: none; }
   .gallery__button:hover {
     background-color: #0075ff;
     color: white;
@@ -668,20 +662,20 @@ textarea {
       -webkit-box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64);
               box-shadow: 0 13px 27px rgba(0, 82, 183, 0.64); }
   .person__name {
+    margin-bottom: 0;
     color: #0075ff;
     font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 0; }
+    line-height: 30px; }
   .person__position {
-    color: #7d8ca1;
     margin: 0;
+    color: #7d8ca1;
     font-size: 14px;
     line-height: 27px; }
   .person__text {
+    margin-top: 4px;
     text-align: center;
     font-size: 16px;
-    line-height: 27px;
-    margin-top: 4px; }
+    line-height: 27px; }
 
 .contact-info {
   display: -webkit-box;
@@ -697,9 +691,9 @@ textarea {
     line-height: 27px;
     color: #7d8ca1; }
   .contact-info__link {
-    color: black;
     text-decoration: none;
-    line-height: 27px; }
+    line-height: 27px;
+    color: black; }
 
 @media screen and (max-width: 800px), (max-width: 450px) {
   .contact-info {
@@ -712,10 +706,7 @@ textarea {
   position: relative;
   height: 360px;
   width: 100%;
-  background-image: url(../images/footer.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  background: url(../images/footer.png) center center/cover no-repeat; }
   .footer__logo {
     position: absolute;
     left: 0;

@@ -1,10 +1,7 @@
 .header {
   height: 100vh;
   width: 100%;
-  background: url(../images/panorama-2117310.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url(../images/panorama-2117310.jpg) center center/cover no-repeat fixed;
   color: #fff;
   font-size: 12px;
   overflow: hidden; }
@@ -16,16 +13,16 @@
   .header__title {
     position: absolute;
     bottom: 165px;
-    width: 340px;
-    height: 121px;
-    font-size: 60px;
-    line-height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 340px;
+    height: 121px;
+    font-size: 60px;
+    line-height: 60px;
     letter-spacing: -1.5px;
     font-weight: bold;
     -webkit-animation: title 1s 1;
@@ -41,22 +38,21 @@
     .header__title::after {
       content: "";
       position: absolute;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-      -webkit-transform-origin: left;
-              transform-origin: left;
       top: -10px;
       left: -7px;
       height: 2px;
       width: 35px;
-      background-color: #fff; }
+      background-color: #fff;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transform-origin: left;
+              transform-origin: left; }
   .header__nav {
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0; }
   .header__top {
-    padding: 20px 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,24 +62,24 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px 30px 0;
     margin: 0 auto;
     max-width: 1440px;
     -webkit-animation: appearence 1.2s ease-in 1;
             animation: appearence 1.2s ease-in 1; }
   .header__logo {
     margin-left: 55px;
-    background-image: url(../images/logo.png);
-    background-size: cover; }
+    background: url(../images/logo.png) center center/cover no-repeat; }
   .header .logo {
     width: 115px;
     height: 76px; }
   .header__link {
-    color: #fff;
     width: 113px;
+    padding-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-bottom: 8px;
     text-decoration: none;
+    color: #fff;
     border-bottom: 1px solid;
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
@@ -164,7 +160,6 @@
   .mob__nav {
     display: block;
     position: absolute;
-    z-index: 5;
     right: -430px;
     bottom: 0;
     max-width: 431px;
@@ -176,7 +171,8 @@
     -webkit-transition: -webkit-transform 1s ease-in-out;
     transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; } }
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+    z-index: 5; } }
   @media screen and (max-width: 800px) and (min-width: 320px), screen and (max-width: 450px) and (min-width: 320px) {
     .mob__nav {
       width: 120%; } }
@@ -197,10 +193,10 @@
   .mob__item {
     margin-left: 35px; }
   .mob__link {
-    z-index: 15;
     color: white;
     font-size: 22px;
-    text-decoration: none; }
+    text-decoration: none;
+    z-index: 15; }
   .mob__box {
     display: -webkit-box;
     display: -ms-flexbox;

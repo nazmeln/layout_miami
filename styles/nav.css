@@ -40,10 +40,10 @@
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
     .nav__link_active {
+      padding: 5px 24px;
       color: #fff;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 5px 24px; }
+      background: rgba(255, 255, 255, 0.1); }
   .nav__link:hover {
     color: #7d8ca1; }
 

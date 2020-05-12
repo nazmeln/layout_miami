@@ -2,10 +2,7 @@
   position: relative;
   height: 360px;
   width: 100%;
-  background-image: url(../images/footer.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  background: url(../images/footer.png) center center/cover no-repeat; }
   .footer__logo {
     position: absolute;
     left: 0;

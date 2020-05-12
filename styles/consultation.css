@@ -7,9 +7,9 @@
           justify-content: space-between;
   width: 100%; }
   .consultation__heading {
+    margin-bottom: 16px;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 16px;
     color: #0075ff; }
   .consultation__text {
     max-width: 410px; }

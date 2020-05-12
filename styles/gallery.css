@@ -3,9 +3,13 @@
   font-weight: bold; }
 
 .gallery__button {
-  margin: 44px auto 0;
   display: block;
+  margin: 44px auto 0;
   padding: 22px 65px;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #0075ff;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;
@@ -14,11 +18,7 @@
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 8px;
-  border: 2px solid #0075ff;
-  outline: none;
-  max-width: 280px;
-  width: 100%; }
+  outline: none; }
   .gallery__button:hover {
     background-color: #0075ff;
     color: white;
