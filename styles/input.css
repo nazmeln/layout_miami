@@ -20,6 +20,9 @@
     color: #b9c1ce; }
   .input::placeholder {
     color: #b9c1ce; }
+  .input:hover {
+    -webkit-box-shadow: 0 0 22px rgba(0, 83, 181, 0.5);
+            box-shadow: 0 0 22px rgba(0, 83, 181, 0.5); }
   .input:focus {
     background-color: white;
     border: 1px solid #7d8ca1; }

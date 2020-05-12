@@ -495,7 +495,8 @@ textarea {
   padding: 170px calc(50% - 470px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  background: white; }
   .section:first-child {
     padding-top: 100px; }
   .section .info {
@@ -584,6 +585,9 @@ textarea {
     color: #b9c1ce; }
   .input::placeholder {
     color: #b9c1ce; }
+  .input:hover {
+    -webkit-box-shadow: 0 0 22px rgba(0, 83, 181, 0.5);
+            box-shadow: 0 0 22px rgba(0, 83, 181, 0.5); }
   .input:focus {
     background-color: white;
     border: 1px solid #7d8ca1; }
@@ -703,10 +707,12 @@ textarea {
             flex-direction: column; } }
 
 .footer {
-  position: relative;
+  position: sticky;
+  bottom: 0;
   height: 360px;
   width: 100%;
-  background: url(../images/footer.png) center center/cover no-repeat; }
+  background: url(../images/footer.png) center center/cover no-repeat;
+  z-index: -1; }
   .footer__logo {
     position: absolute;
     left: 0;

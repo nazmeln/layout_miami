@@ -6,7 +6,8 @@
   padding: 170px calc(50% - 470px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  background: white; }
   .section:first-child {
     padding-top: 100px; }
   .section .info {
