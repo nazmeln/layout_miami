@@ -73,9 +73,7 @@
   .header__logo {
     margin-left: 55px;
     background-image: url(../images/logo.png);
-    background-size: cover;
-    -webkit-animation: flip 2s ease-in-out 1;
-            animation: flip 2s ease-in-out 1; }
+    background-size: cover; }
   .header .logo {
     width: 115px;
     height: 76px; }
@@ -91,16 +89,6 @@
     transition: color 0.3s; }
     .header__link:hover {
       color: #7d8ca1; }
-
-@-webkit-keyframes flip {
-  50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg); } }
-
-@keyframes flip {
-  50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg); } }
 
 @-webkit-keyframes appearence {
   from {
